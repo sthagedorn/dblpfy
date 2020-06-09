@@ -39,7 +39,7 @@ if __name__ == "__main__":
     bibtex_database = bibtexparser.load(bibtex_file)
 
     # loop over every bibtex entry in the input DB
-    for entry in tqdm(bibtex_database.entries[:10]):
+    for entry in tqdm(bibtex_database.entries):
 
       # title has { and } -- remove them and wrap title in quotation marks
       title = entry["title"]
